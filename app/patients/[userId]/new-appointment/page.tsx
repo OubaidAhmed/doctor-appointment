@@ -10,13 +10,11 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="logo"
-            className="mb-12 h-10 w-fit"
-          />
+          <div className="mb-12 w-40 h-auto text-center">
+            <h1 className="text-4xl font-bold text-white flex justify-center">
+              Doctor <span className="inline">App</span>
+            </h1>
+          </div>
 
           <AppointmentForm
             patientId={patient?.$id}
@@ -24,7 +22,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             type="create"
           />
 
-          <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
+          <p className="copyright mt-10 py-12">© 2024 Oubaid Ahmed</p>
         </div>
       </section>
 
